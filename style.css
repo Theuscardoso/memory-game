@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   background-image: url(fotos/fundo.jpg);
+   background-size: cover; 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#timer {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 8px;
+}
+
+.card.flipped img {
+    display: block;
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #c4d413;
+    color: white;
+    border-radius: 8px;
+}
